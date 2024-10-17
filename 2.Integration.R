@@ -194,7 +194,7 @@ cumulative_variance <- cumsum(variance_explained)
 plot(cumulative_variance, type = 'b', xlab = 'Number of PCs', ylab = 'Cumulative Variance Explained')
 
 # Perform PCA specifically on the most variable genes identified earlier
-merged.datasets <- RunPCA(merged.datasets, npcs = 15, verbose = FALSE)
+merged.datasets <- RunPCA(merged.datasets, npcs = 6, verbose = FALSE)
 # Run PCA again focusing on the most variable genes
 merged.datasets <- RunPCA(merged.datasets, features = VariableFeatures(merged.datasets))
 # Print the PCA results for the top 10 dimensions and their associated features

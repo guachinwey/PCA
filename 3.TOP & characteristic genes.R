@@ -68,8 +68,8 @@ print(heatmap5)
 dev.off()
 
 #List of genes by population.
-db_ <- "/home/csic/epi/sbb/Silvia/Analysis/NEWS/DATA/characteristic genes.xlsx";
-dab <- openxlsx::read.xlsx("/home/csic/epi/sbb/Silvia/Analysis/NEWS/DATA/characteristic genes.xlsx")
+db_ <- "/home/csic/epi/sbb/Silvia/Analysis/NEWS/DATA/ScTypeDB_short.xlsx";
+dab <- openxlsx::read.xlsx("/home/csic/epi/sbb/Silvia/Analysis/NEWS/DATA/ScTypeDB_short.xlsx")
 tissue <- "Prostate"
 source("https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/gene_sets_prepare.R")
 source("https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/sctype_score_.R")
